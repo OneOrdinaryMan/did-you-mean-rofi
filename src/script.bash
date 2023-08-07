@@ -1,2 +1,4 @@
 #!/usr/bin/bash
-echo "Hello, World!"
+search_term=$(cat /dev/null | rofi -dmenu)
+dict=$(dym -c "$search_term" | rofi -dmenu)
+printf "$dict" | xclip -selection clipboard
