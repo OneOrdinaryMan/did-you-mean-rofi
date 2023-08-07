@@ -1,4 +1,4 @@
-bin_SCRIPTS = hello_bash
+bin_SCRIPTS = dym_rofi
 dist_noinst_SCRIPTS = script.bash
 CLEANFILES = $(bin_SCRIPTS)
 $(bin_SCRIPTS): $(dist_noinst_SCRIPTS)
